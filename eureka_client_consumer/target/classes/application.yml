@@ -1,0 +1,14 @@
+
+#--------------------配置 service discovery------------
+spring:
+  application:
+    name: eureka-client-consumer
+server:
+  port: 8011
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+     serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
