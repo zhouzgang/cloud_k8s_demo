@@ -4,13 +4,14 @@
 spring:
   application:
     name: eureka-server
-  profiles: peer0
+  profiles: dev
 server:
   port: 8000
 
 eureka:
   instance:
-    hostname: localhost
+#    hostname: localhost
+    prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
@@ -19,7 +20,7 @@ eureka:
 spring:
   application:
     name: eureka-server
-  profiles: peer1
+  profiles: test
 server:
   port: 8001
 
@@ -34,7 +35,7 @@ eureka:
 spring:
   application:
     name: eureka-server
-  profiles: peer2
+  profiles: pro
 server:
   port: 8002
 
