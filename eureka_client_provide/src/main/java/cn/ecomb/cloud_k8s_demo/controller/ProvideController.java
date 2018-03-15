@@ -43,7 +43,8 @@ public class ProvideController {
     DiscoveryClient discoveryClient;
 
     @GetMapping("/provide")
-    public String getData() {
+    public String getData() throws InterruptedException {
+        Thread.sleep(5000L);
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;

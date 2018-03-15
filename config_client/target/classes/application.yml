@@ -1,7 +1,0 @@
-
-#--------------------配置 service discovery------------
-spring:
-  application:
-    name: config-client
-server:
-  port: 8015

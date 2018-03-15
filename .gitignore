@@ -1,6 +1,7 @@
 .idea/
 *.iml
 *.log
+*.jar
 target/
 .setting
 .project
