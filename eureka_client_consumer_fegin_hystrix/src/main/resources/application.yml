@@ -1,0 +1,18 @@
+
+#--------------------配置 service discovery------------
+spring:
+  application:
+    name: eureka_client_consumer_fegin_hystrix
+server:
+  port: 8018
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+#  instance:
+#    hostname: localhost
+  client:
+     serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

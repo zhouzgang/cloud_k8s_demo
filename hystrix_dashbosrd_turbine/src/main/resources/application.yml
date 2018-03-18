@@ -1,0 +1,19 @@
+
+#--------------------配置 Hystrix Turbine------------
+spring:
+  application:
+    name: hystrix-dashboard-turbine
+server:
+  port: 8019
+
+turbine:
+  appConfig: eureka_client_consumer_fegin_hystrix, hystrix-dashboard
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

@@ -1,0 +1,14 @@
+
+#--------------------配置 service discovery------------
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8018
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+     serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

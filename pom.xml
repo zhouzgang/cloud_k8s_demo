@@ -18,6 +18,11 @@
         <module>config_client</module>
         <module>eureka_client_consumer_ribbon_hystrix</module>
         <module>eureka_server</module>
+        <module>hystrix_dashboard</module>
+        <module>api_gateway</module>
+        <module>stream_rabbitmq</module>
+        <module>eureka_client_consumer_fegin_hystrix</module>
+        <module>hystrix_dashbosrd_turbine</module>
     </modules>
 
     <parent>
@@ -32,6 +37,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <skipTests>true</skipTests>
+        <docker.image.prefix>ecomb</docker.image.prefix>
     </properties>
 
     <dependencies>
