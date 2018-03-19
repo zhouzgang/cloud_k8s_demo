@@ -48,7 +48,7 @@
                     <!--<imageName>testDocker</imageName>-->
                     <baseImage>java</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <dockerDirectory>src/main/resources</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
