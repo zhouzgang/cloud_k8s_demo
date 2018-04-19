@@ -23,6 +23,7 @@
         <module>stream_rabbitmq</module>
         <module>eureka_client_consumer_fegin_hystrix</module>
         <module>hystrix_dashbosrd_turbine</module>
+        <module>zipkin_server</module>
     </modules>
 
     <parent>

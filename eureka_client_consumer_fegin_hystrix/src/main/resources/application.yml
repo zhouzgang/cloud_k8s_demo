@@ -3,6 +3,11 @@
 spring:
   application:
     name: eureka_client_consumer_fegin_hystrix
+  zipkin:
+    base-url: http://localhost:8001
+  sleuth:
+      sampler:
+        percentage: 1.0    #采样比例, 默认为0.1
 server:
   port: 8018
 

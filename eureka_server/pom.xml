@@ -44,7 +44,7 @@
                 <version>1.0.0</version>
                 <configuration>
                     <!--<imageName>${docker.image.prefix}/${project.artifactId}:${project.version} </imageName>-->
-                    <imageName>${project.build.finalName} </imageName>
+                    <imageName>${project.build.finalName}-${project.build.timestamp}</imageName>
                     <!--<imageName>testDocker</imageName>-->
                     <baseImage>java</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>

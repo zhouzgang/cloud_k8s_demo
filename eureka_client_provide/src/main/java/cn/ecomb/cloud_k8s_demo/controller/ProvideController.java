@@ -1,5 +1,7 @@
 package cn.ecomb.cloud_k8s_demo.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,12 +41,17 @@ public class ProvideController {
 //        return this.userFeignClient.findById(id);
 //    }
 
+
+    private final Logger logger = LoggerFactory.getLogger(ProvideController.class);
+
     @Autowired
     DiscoveryClient discoveryClient;
 
     @GetMapping("/provide")
     public String getData() throws InterruptedException {
+
 //        Thread.sleep(5000L);
+        logger.info("trance--: /provide");
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;
