@@ -4,7 +4,7 @@ spring:
   application:
     name: api-gateway
 server:
-  port: 8018
+  port: 8021
 
 eureka:
   instance:
@@ -12,3 +12,11 @@ eureka:
   client:
      serviceUrl:
       defaultZone: http://localhost:8000/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api/**
+      serviceId: eureka_client_consumer_fegin_hystrix
+    api-b:
+      path: /api-a/**
+      serviceId: eureka_client_consumer_fegin_hystrix_a

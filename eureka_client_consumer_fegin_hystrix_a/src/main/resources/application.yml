@@ -1,0 +1,23 @@
+
+#--------------------配置 service discovery------------
+spring:
+  application:
+    name: eureka_client_consumer_fegin_hystrix_a
+  zipkin:
+    base-url: http://localhost:8001
+  sleuth:
+      sampler:
+        percentage: 1.0    #采样比例, 默认为0.1
+server:
+  port: 8020
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+#  instance:
+#    hostname: localhost
+  client:
+     serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

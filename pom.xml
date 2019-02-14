@@ -24,6 +24,11 @@
         <module>eureka_client_consumer_fegin_hystrix</module>
         <module>hystrix_dashbosrd_turbine</module>
         <module>zipkin_server</module>
+        <module>joy_location</module>
+        <module>joy_service</module>
+        <module>joy_core</module>
+        <module>joy_recommend</module>
+        <module>eureka_client_consumer_fegin_hystrix_a</module>
     </modules>
 
     <parent>
