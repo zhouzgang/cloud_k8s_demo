@@ -29,6 +29,9 @@
         <module>joy_core</module>
         <module>joy_recommend</module>
         <module>eureka_client_consumer_fegin_hystrix_a</module>
+        <module>eureka_client_location</module>
+        <module>eureka_client_recommend</module>
+        <module>eureka_client_core</module>
     </modules>
 
     <parent>
